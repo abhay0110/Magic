@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background: #F6F6F6;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header.page-header {
+    background: no-repeat center/cover;
+    display: flex;
+    height: 120px;
+    min-width: 120px;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: #000 0 0 .2em;
+}
+
+h1 {
+  font: bold 3rem 'Dancing Script', cursive,
+          fantasy;
+      margin: 2%;
+      text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: .5rem 1.5rem;
+  background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+p {
+  padding: 0 0.5rem 0;
+  margin: 0 0 0 0;
+  font-size: 1rem;
+  text-align: left;
+  color: Magenta;
+}
+
+LI {
+  padding: 1 .2rem .2rem 1rem;
+  margin: 0 0 0 0;
+  font-size: 1rem;
+  text-align: left;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  background: skyblue;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+.card:nth-child(2n) h1 {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.card:nth-child(4n) h1 {
+  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.card:nth-child(5n) h1 {
+  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+}
